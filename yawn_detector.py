@@ -90,7 +90,7 @@ while True:
     previous_status = yawn_status  
 
     #lips distance is subjective and changes from subject to subject based on their facial structures
-    if lips_dist > 40:
+    if lips_dist > 47:
         yawn_status = True
         output_text = " Number of Yawns: " + str(yawn_count + 1)
         cv2.putText(image_frame, "You are yawning", (50,450), cv2.FONT_HERSHEY_COMPLEX, 1,(255,255,0))
