@@ -8,7 +8,7 @@ import numpy as np
 
 detector = dlib.get_frontal_face_detector() #For detecting faces
 landmark_path="shape_predictor_68_face_landmarks.dat" #Path of the file - if stored in the same directory. Else, give the relative path
-predictor = dlib.shape_predictor(landmark_path) #For identifying landmarks
+predictor = dlib.shape_predictor(landmark_path) ##loads the facial landmark predictor
 
 #Obtaining Facial Landmark coordinates
 def get_facial_landmarks(image):
